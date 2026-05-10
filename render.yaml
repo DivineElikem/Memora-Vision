@@ -2,8 +2,6 @@ services:
   - type: web
     name: memora-vision-backend
     env: docker
-    dockerContext: backend
-    dockerFilePath: backend/Dockerfile
     plan: free # Change to 'starter' or higher for persistent disk support
     envVars:
       - key: PORT
