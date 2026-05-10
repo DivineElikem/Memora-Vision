@@ -1,0 +1,29 @@
+[project]
+name = "vision-assistant-backend"
+version = "0.1.0"
+description = "FastAPI backend for multimodal video memory and query demo"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "python-multipart>=0.0.9",
+    "pydantic-settings>=2.4.0",
+    "httpx>=0.27.0",
+    "opencv-python>=4.10.0.84",
+    "ultralytics>=8.4.47",
+]
+
+[project.optional-dependencies]
+vision = [
+    "ultralytics>=8.3.0",
+]
+test = [
+    "pytest>=8.3.0",
+    "httpx>=0.27.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.0",
+]
+

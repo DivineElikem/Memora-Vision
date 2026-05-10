@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: memora-vision-backend
+    env: docker
+    dockerContext: backend
+    dockerFilePath: backend/Dockerfile
+    plan: free # Change to 'starter' or higher for persistent disk support
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: VLM_BASE_URL
+        sync: false # Set this in Render dashboard
+      - key: LLM_BASE_URL
+        sync: false # Set this in Render dashboard
+      - key: DATABASE_PATH
+        value: /data/memora.sqlite3
+      - key: UPLOAD_DIR
+        value: /data/uploads
+      - key: KEYFRAME_DIR
+        value: /data/keyframes
+    # disk:
+    #   name: memora-data
+    #   mountPath: /data
+    #   sizeGB: 1

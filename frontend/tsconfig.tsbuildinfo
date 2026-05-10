@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/speech.d.ts","./src/types.ts","./src/vite-env.d.ts","./src/api/client.ts","./src/hooks/useSpeechRecognition.ts"],"version":"5.9.3"}
