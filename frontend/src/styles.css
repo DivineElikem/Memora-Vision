@@ -102,6 +102,13 @@ h1, h2, h3 { margin: 0; font-weight: 700; }
   justify-content: center;
   font-size: 1.3rem;
   box-shadow: var(--shadow-accent);
+  overflow: hidden;
+}
+
+.brand-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .brand h1 {

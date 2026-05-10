@@ -300,7 +300,9 @@ export default function App() {
         {/* ── Header ──────────────────────────────────── */}
         <header className="topbar">
           <div className="brand">
-            <div className="brand-icon">🧠</div>
+            <div className="brand-icon">
+              <img src="/memora-logo.png" alt="Memora Logo" />
+            </div>
             <div>
               <h1>Memora Vision</h1>
               <p className="brand-sub">AI Visual Memory Assistant</p>
